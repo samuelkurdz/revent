@@ -57,7 +57,7 @@ p {
   &::after {
     content: "";
     background: linear-gradient(to bottom, #7D97F4, #7D97F4 49%, #F2F2F2 52%);
-    @apply absolute left-0 top-1 rounded-sm h-4/5 w-2.5;
+    @apply lg:absolute left-0 top-1 rounded-sm h-4/5 w-2.5;
   }
 }
 
@@ -65,6 +65,10 @@ p {
   position: relative;
   &::after {
     content: "";
-    @apply absolute -left-[48.5px] bg-primary size-5 rounded-full z-40;
+    @apply lg:absolute -left-[48.5px] bg-primary size-5 rounded-full z-40;
   }
+}
+
+.responsive-container {
+  @apply max-w-[1440px] mx-auto px-[100px]
 }
