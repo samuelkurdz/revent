@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary: 227 84% 72%;
+}
+
+.days-one {
+  font-family: "Days One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.walsheim {
+  font-family: "GT Walsheim Pro Regular Regular", sans-serif;
+}
+
+.proxima {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+span {
+  @apply text-primary font-bold;
+}
+
+button {
+  @apply dm-sans font-bold text-base leading-8 bg-primary hover:bg-primary/95 transition-colors text-white py-3 px-8 rounded-[10px] flex items-center gap-2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "GT Walsheim Pro Regular Regular", sans-serif;
+}
+
+p {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.bento-background {
+  background: linear-gradient(180deg, #FAFBFB00 0%, #7D97F414 50%);
+}
+
+.bento-shadow {
+  box-shadow: 0 20px 100px 0 #5A71840D;
+}
+
+.tab-item {
+  position: relative;
+  &::after {
+    content: "";
+    background: linear-gradient(to bottom, #7D97F4, #7D97F4 49%, #F2F2F2 52%);
+    @apply absolute left-0 top-1 rounded-sm h-4/5 w-2.5;
+  }
+}
+
+.circled-tab {
+  position: relative;
+  &::after {
+    content: "";
+    @apply absolute -left-[48.5px] bg-primary size-5 rounded-full z-40;
+  }
+}
