@@ -39,10 +39,10 @@
     class="grid lg:grid-cols-2 items-center mt-10 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px] xl:bg-[url('/assets/shady.png')] bg-right-bottom bg-contain bg-no-repeat"
   >
     <div class="flex lg:block flex-col items-center justify-center text-center lg:text-start">
-      <h3 class="font-medium text-[50px] leading-[57.25px]">
+      <h3 class="font-medium text-4xl md:text-[50px] md:leading-[57.25px]">
         We are creating wealth for our <span>society</span>
       </h3>
-      <p class="text-2xl leading-9 font-light mt-4">
+      <p class="tex-lg md:text-2xl md:leading-9 font-light mt-4">
         Revent is dedicated to enabling financial freedom by providing quick access to loans in order to provide convenience for its customers.
       </p>
       <button class="mt-[26px]">Let’s Talk  👋🏾</button>
@@ -62,7 +62,7 @@
   </section>
 
   <!-- looking question -->
-  <section class="font-black text-[40px] leading-[60px] my-28 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]">
+  <section class="font-black text-4xl text-center md:text-start md:text-[40px] md:leading-[60px] my-28 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]">
     <h3 class="max-w-[475px]">
       Are you looking for a quick loan? Get your loan in <span>24 hours ⏳</span>
     </h3>
@@ -106,10 +106,10 @@
   <!--  bento -->
   <section class="py-20 bento-background">
     <div class="grid lg:grid-cols-2 items-center gap-20 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]">
-      <div class="flex justify-center gap-6">
+      <div class="flex flex-col md:flex-row justify-center gap-6">
         <div class="flex flex-col gap-6 *:rounded-lg">
           @for(bento of bentoContents1; track  bento.title) {
-            <div class="bento-shadow bg-white p-6 w-full max-w-[278px]">
+            <div class="bento-shadow bg-white p-6 w-full md:max-w-[278px]">
               <div class="size-20 rounded-full bg-[#F4F6FD] flex items-center justify-center">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g>
@@ -122,16 +122,16 @@
                   </g>
                 </svg>
               </div>
-              <h5 class="mt-8 text-[24px] leading-[27.48px] font-medium">
+              <h5 class="mt-8 text-2xl md:leading-[27.48px] font-medium">
                 {{bento.title}}
               </h5>
-              <p class="mt-4 leading-6 proxima">{{bento.description}}</p>
+              <p class="mt-4 md:leading-6 proxima">{{bento.description}}</p>
             </div>
           }
         </div>
-        <div class="flex flex-col gap-6 *:rounded-lg mt-10">
+        <div class="flex flex-col gap-6 *:rounded-lg md:mt-10">
           @for(bento of bentoContents2; track  bento.title) {
-            <div class="bento-shadow bg-white p-6 w-full max-w-[278px]">
+            <div class="bento-shadow bg-white p-6 w-full md:max-w-[278px]">
               <div class="size-20 rounded-full bg-[#F4F6FD] flex items-center justify-center">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g>
@@ -144,19 +144,19 @@
                   </g>
                 </svg>
               </div>
-              <h5 class="mt-8 text-[24px] leading-[27.48px] font-medium">
+              <h5 class="mt-8 text-2xl md:leading-[27.48px] font-medium">
                 {{bento.title}}
               </h5>
-              <p class="mt-4 leading-6 proxima">{{bento.description}}</p>
+              <p class="mt-4 md:leading-6 proxima">{{bento.description}}</p>
             </div>
           }
         </div>
       </div>
       <div>
-        <p class="w-fit bg-[#F4F6FD] text-primary rounded-[20px] py-1 px-10 dm-sans font-bold text-lg leading-8">
+        <p class="w-fit bg-[#F4F6FD] text-primary rounded-[20px] py-1 px-10 dm-sans font-bold md:text-lg md:leading-8">
           We guarantee
         </p>
-        <h4 class="days-one font-bold text-[40px] leading-[48px] mt-6">
+        <h4 class="days-one font-bold text-3xl md:text-[40px] md:leading-[48px] mt-6">
           Easy Financial services <span>wherever you go</span>
         </h4>
         <p class="mt-9 text-[24px] leading-9 font-light">
@@ -187,10 +187,10 @@
   <!--  why -->
   <section class="grid lg:grid-cols-2 items-center mt-[100px] xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]">
     <div>
-      <p class="w-fit bg-[#F4F6FD] text-primary rounded-[20px] py-1 px-10 dm-sans font-bold text-lg leading-8">
+      <p class="w-fit bg-[#F4F6FD] text-primary rounded-[20px] py-1 px-10 dm-sans font-bold md:text-lg md:leading-8">
         Why Revent
       </p>
-      <h4 class="days-one font-bold text-[40px] leading-[48px] mt-6">
+      <h4 class="days-one font-bold text-3xl md:text-[40px] md:leading-[48px] mt-6">
         We are a micro-finance body that <span>cares</span>
       </h4>
       <p class="mt-9 text-[24px] leading-9 font-light">
@@ -222,10 +222,10 @@
       >
     </div>
     <div class="order-first lg:order-last">
-      <p class="w-fit bg-[#F4F6FD] text-primary rounded-[20px] py-1 px-10 dm-sans font-bold text-lg leading-8">
+      <p class="w-fit bg-[#F4F6FD] text-primary rounded-[20px] py-1 px-10 dm-sans font-bold md:text-lg md:leading-8">
         What we offer
       </p>
-      <h4 class="days-one font-bold text-[40px] leading-[48px] mt-6">
+      <h4 class="days-one font-bold text-3xl md:text-[40px] md:leading-[48px] mt-6">
         Have access to loans anytime anywhere
       </h4>
       <p class="mt-9 text-[24px] leading-9 font-light">
@@ -237,16 +237,16 @@
   <!--  more offers -->
   <section class="grid lg:grid-cols-2 items-center xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]">
     <div>
-      <p class="w-fit bg-[#EFFAFE] text-[#5ECCF3] rounded-[20px] py-1 px-10 dm-sans font-bold text-lg leading-8">
+      <p class="w-fit bg-[#EFFAFE] text-[#5ECCF3] rounded-[20px] py-1 px-10 dm-sans font-bold md:text-lg md:leading-8">
         What we offer
       </p>
-      <h4 class="days-one font-bold text-[40px] leading-[48px] mt-6">
+      <h4 class="days-one font-bold text-3xl md:text-[40px] md:leading-[48px] mt-6">
         Financial Advisory, consultation and Lending services
       </h4>
       <p class="mt-9 text-[24px] leading-9 font-light">
         We provide business advisory that is backed with funding to increase turnover and in turn profits while alleviating poverty especially among-st women and communities that are under banked or unbanked.
       </p>
-      <div class="flex items-center gap-6 mt-6">
+      <div class="flex flex-wrap items-center gap-6 mt-6">
         @for (offer of offer2; track offer) {
           <div class="flex items-center gap-4">
             <div class="size-8 rounded-full flex items-center justify-center bg-[#EFFAFE]">
@@ -470,7 +470,7 @@
   <section
     class="mt-[200px] mb-[236px] flex flex-col items-center justify-center gap-10"
   >
-    <h4 class=" text-[40px] leading-[52px] text-center max-w-3xl">
+    <h4 class=" md:text-[40px] md:leading-[52px] text-center max-w-3xl">
       We are here to help you navigate the poor financial service provision in Africa
     </h4>
 
@@ -479,11 +479,11 @@
 
   <!--  footer-->
   <footer
-    class="bg-[#5E88F3] h-[256px] py-[87px] px-[87px] text-white"
+    class="bg-[#5E88F3] p-6 lg:p-[87px] text-white"
   >
     <div class="flex items-center justify-between">
       <h4 class="days-one text-[40px] leading-[48px]">LOGO</h4>
-      <div class=" flex items-center gap-6 text-lg leading-[26px]">
+      <div class="hidden lg:flex items-center gap-6 text-lg leading-[26px]">
         <p>Contact us</p>
         <p>About us</p>
         <p>Services</p>
@@ -504,7 +504,7 @@
     </div>
 
     <!--    separator -->
-    <div class="max-w-7xl h-px bg-white bg-opacity-20 mt-3.5 mb-10"></div>
+    <div class="max-w-7xl h-px bg-white bg-opacity-20 mt-3.5 mb-3.5 lg:mb-10"></div>
 
     <div class="text-center">
       <p>
