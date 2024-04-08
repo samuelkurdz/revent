@@ -36,7 +36,8 @@
 
   <!-- hero section -->
   <section
-    class="grid lg:grid-cols-2 items-center mt-10 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px] xl:bg-[url('/assets/shady.png')] bg-right-bottom bg-contain bg-no-repeat"
+    data-aos="fade-top"
+    class="grid lg:grid-cols-2 gap-7 items-center mt-10 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px] xl:bg-[url('/assets/shady.png')] bg-right-bottom bg-contain bg-no-repeat"
   >
     <div class="flex lg:block flex-col items-center justify-center text-center lg:text-start">
       <h3 class="font-medium text-4xl md:text-[50px] md:leading-[57.25px]">
@@ -48,9 +49,12 @@
       <button class="mt-[26px]">Let’s Talk  👋🏾</button>
     </div>
 
-    <div class="flex justify-center items-center bg-[url('/assets/shady.png')] xl:bg-none bg-center bg-contain bg-no-repeat">
+    <div
+      data-aos="fade-left"
+      class="flex justify-center items-center bg-[url('/assets/shady.png')] xl:bg-none bg-center bg-contain bg-no-repeat"
+    >
       <img
-        class="max-w-[300px] max-h-[300px] md:max-w-[500px] md:max-h-[500px] xl:max-w-[600px] xl:max-h-[600px]"
+        class="max-w-[300px] max-h-[300px] md:max-w-[500px] md:max-h-[500px] xl:max-w-[550px] xl:max-h-[550px]"
         ngSrc="/assets/hero.png"
         alt="hero-image"
         height="2400"
@@ -62,7 +66,10 @@
   </section>
 
   <!-- looking question -->
-  <section class="font-black text-4xl text-center md:text-start md:text-[40px] md:leading-[60px] my-28 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]">
+  <section
+    data-aos="fade-right"
+    class="font-black text-4xl text-center md:text-start md:text-[40px] md:leading-[60px] my-28 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]"
+  >
     <h3 class="max-w-[475px]">
       Are you looking for a quick loan? Get your loan in <span>24 hours ⏳</span>
     </h3>
@@ -92,7 +99,10 @@
         </p>
       </div>
     </div>
-    <div class="flex md:block items-center justify-center">
+    <div
+      data-aos="fade-bottom"
+      class="flex md:block items-center justify-center"
+    >
       <img
         class="max-w-[300px] max-h-[300px] md:max-w-[480px] md:max-h-[480px] xl:max-w-[580px] xl:max-h-[580px]"
         ngSrc="/assets/apply-steps.png"
@@ -108,8 +118,12 @@
     <div class="grid lg:grid-cols-2 items-center gap-20 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]">
       <div class="flex flex-col md:flex-row justify-center gap-6">
         <div class="flex flex-col gap-6 *:rounded-lg">
-          @for(bento of bentoContents1; track  bento.title) {
-            <div class="bento-shadow bg-white p-6 w-full md:max-w-[278px]">
+          @for(bento of bentoContents1; track  bento.title; let index = $index) {
+<!--              [attr.data-aos]="index % 2 === 1 ? 'fade-right' : 'fade-left'"-->
+            <div
+              data-aos="fade-right"
+              class="bento-shadow bg-white p-6 w-full md:max-w-[278px]"
+            >
               <div class="size-20 rounded-full bg-[#F4F6FD] flex items-center justify-center">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g>
@@ -131,7 +145,10 @@
         </div>
         <div class="flex flex-col gap-6 *:rounded-lg md:mt-10">
           @for(bento of bentoContents2; track  bento.title) {
-            <div class="bento-shadow bg-white p-6 w-full md:max-w-[278px]">
+            <div
+              data-aos="fade-left"
+              class="bento-shadow bg-white p-6 w-full md:max-w-[278px]"
+            >
               <div class="size-20 rounded-full bg-[#F4F6FD] flex items-center justify-center">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g>
@@ -152,7 +169,7 @@
           }
         </div>
       </div>
-      <div>
+      <div data-aos="fade-bottom"  data-aos-easing="ease-in-out">
         <p class="w-fit bg-[#F4F6FD] text-primary rounded-[20px] py-1 px-10 dm-sans font-bold md:text-lg md:leading-8">
           We guarantee
         </p>
