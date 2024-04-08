@@ -52,15 +52,33 @@ p {
   box-shadow: 0 20px 100px 0 #5A71840D;
 }
 
-.tab-item {
+.steps-container {
   position: relative;
   &::after {
     content: "";
-    background: linear-gradient(to bottom, #7D97F4, #7D97F4 49%, #F2F2F2 52%);
-    @apply lg:absolute left-0 top-1 rounded-sm h-4/5 w-2.5;
+    @apply lg:absolute left-0 top-1 rounded-sm h-3/4 w-2.5 bg-[#F2F2F2] transition duration-300;
+  }
+
+  //&.half {
+  //  &::after {
+  //    background: linear-gradient(to bottom, #7D97F4, #7D97F4 49%, #F2F2F2 52%);
+  //  }
+  //}
+
+  &:has(div.step-item-2) {
+    &::after {
+      background: linear-gradient(to bottom, #7D97F4, #7D97F4 49%, #F2F2F2 52%);
+    }
+  }
+
+  &:has(div.step-item-3) {
+    &::after {
+      background: #7D97F4;
+    }
   }
 }
-
+//after:bg-[#F2F2F2]
+//after:bg-primary
 .circled-tab {
   position: relative;
   &::after {

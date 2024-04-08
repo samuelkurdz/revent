@@ -36,10 +36,12 @@
 
   <!-- hero section -->
   <section
-    data-aos="fade-top"
     class="grid lg:grid-cols-2 gap-7 items-center mt-10 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px] xl:bg-[url('/assets/shady.png')] bg-right-bottom bg-contain bg-no-repeat"
   >
-    <div class="flex lg:block flex-col items-center justify-center text-center lg:text-start">
+    <div
+      data-aos="fade-top"
+      class="flex lg:block flex-col items-center justify-center text-center lg:text-start"
+    >
       <h3 class="font-medium text-4xl md:text-[50px] md:leading-[57.25px]">
         We are creating wealth for our <span>society</span>
       </h3>
@@ -51,10 +53,11 @@
 
     <div
       data-aos="fade-left"
-      class="flex justify-center items-center bg-[url('/assets/shady.png')] xl:bg-none bg-center bg-contain bg-no-repeat"
+
+      class="md:flex justify-center items-center bg-[url('/assets/shady.png')] xl:bg-none bg-center bg-contain bg-no-repeat"
     >
       <img
-        class="max-w-[300px] max-h-[300px] md:max-w-[500px] md:max-h-[500px] xl:max-w-[550px] xl:max-h-[550px]"
+        class="md:max-w-[500px] md:max-h-[500px] xl:max-w-[550px] xl:max-h-[550px]"
         ngSrc="/assets/hero.png"
         alt="hero-image"
         height="2400"
@@ -77,20 +80,20 @@
 
   <!--steps-->
   <section class="grid md:grid-cols-2 items-center gap-8 lg:gap-16 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]">
-    <div class="relative space-y-11 lg:pl-11 tab-item">
-      <div class="space-y-6">
-        <h4 class="font-bold text-[32px] leading-10 circled-tab">Apply</h4>
+    <div class="relative space-y-11 lg:pl-11 steps-container">
+      <div class="space-y-6 text-[#BDBDBD]" id="step-1">
+        <h4 class="font-bold text-[32px] leading-10 circled-tab after:bg-[#F2F2F2]">Apply</h4>
         <p class="text-lg">
           Take your first step to financial freedom by applying for a loan from us and we will be available to help you every step of the way.
         </p>
       </div>
-      <div class="space-y-6">
-        <h4 class="font-bold text-[32px] leading-10 circled-tab after:top-2">Get verified</h4>
+      <div class="space-y-6 text-[#BDBDBD]" id="step-2">
+        <h4 class="font-bold text-[32px] leading-10 circled-tab after:top-2 after:bg-[#F2F2F2]">Get verified</h4>
         <p class="text-lg">
           We follow a well-regulated process to evaluate you/your documents we verify you and move you to the next step
         </p>
       </div>
-      <div class="space-y-6 text-[#BDBDBD]">
+      <div class="space-y-6 text-[#BDBDBD]" id="step-3">
         <h4 class="font-bold text-[32px] leading-10 circled-tab after:top-4 after:bg-[#F2F2F2]">
           Get funded
         </h4>
@@ -101,6 +104,7 @@
     </div>
     <div
       data-aos="fade-bottom"
+      data-aos-once="true"
       class="flex md:block items-center justify-center"
     >
       <img
@@ -118,8 +122,7 @@
     <div class="grid lg:grid-cols-2 items-center gap-20 xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]">
       <div class="flex flex-col md:flex-row justify-center gap-6">
         <div class="flex flex-col gap-6 *:rounded-lg">
-          @for(bento of bentoContents1; track  bento.title; let index = $index) {
-<!--              [attr.data-aos]="index % 2 === 1 ? 'fade-right' : 'fade-left'"-->
+          @for(bento of bentoContents1; track  bento.title) {
             <div
               data-aos="fade-right"
               class="bento-shadow bg-white p-6 w-full md:max-w-[278px]"
@@ -214,7 +217,11 @@
         We support micro businesses and enterprises within the fast-moving consumer goods (FMCG) sector with a view to reduce hunger and foster a thriving micro economy within our communities amongst men and women.
       </p>
     </div>
-    <div data-aos="fade-left" class="flex md:block items-center justify-center">
+    <div
+      data-aos="fade-top"
+      data-aos-once="true"
+      class="flex md:block items-center justify-center"
+    >
       <img
         class="max-w-[300px] max-h-[300px] md:max-w-[480px] md:max-h-[480px] xl:max-w-[580px] xl:max-h-[580px]"
         ngSrc="/assets/why-us.png"
@@ -228,7 +235,11 @@
 
   <!--  offer-->
   <section class="grid lg:grid-cols-2 items-center xl:max-w-[1440px] mx-auto px-8 xl:px-[100px]">
-    <div data-aos="fade-right" class="flex md:block items-center justify-center">
+    <div
+      data-aos="fade-bottom"
+      data-aos-once="true"
+      class="flex md:block items-center justify-center"
+    >
       <img
         class="max-w-[300px] max-h-[300px] md:max-w-[480px] md:max-h-[480px] xl:max-w-[580px] xl:max-h-[580px]"
         ngSrc="/assets/offer-1.png"
@@ -276,7 +287,11 @@
         }
       </div>
     </div>
-    <div data-aos="fade-right" class="flex md:block items-center justify-center">
+    <div
+      data-aos="fade-bottom"
+      data-aos-once="true"
+      class="flex md:block items-center justify-center"
+    >
       <img
         class="max-w-[300px] max-h-[300px] md:max-w-[480px] md:max-h-[480px] xl:max-w-[580px] xl:max-h-[580px]"
         ngSrc="/assets/offer-2.png"
